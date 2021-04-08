@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Step 3</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+    <div th:insert="fragments/_header :: header"></div>
+    <h1>Step 3</h1>
+    <img th:src="@{/img/three.jpg}" alt="the number three" width="50px" height="50px">
+    <p>Step 3 is to count to three, it is after 2, and after 1, but before 4.
+    Congrats, that is how you count to 3!!</p>
+
+    <button id="nextBtn">Return to Home</button>
+    <div th:replace="fragments/_footer :: footer"></div>
+</body>
+<script type="text/javascript" th:src="@{/main.js}"></script>
+</html>

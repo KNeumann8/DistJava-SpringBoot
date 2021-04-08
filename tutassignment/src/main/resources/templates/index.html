@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<h1>Home</h1>
+<p>Welcome to our tutorial website! We make great tutorials that
+ make learning as easy as 1,2,3!</p>
+<div th:replace="fragments/_footer :: footer"></div>
+</body>
+<script type="text/javascript" th:src="@{/main.js}"></script>
+</html>
